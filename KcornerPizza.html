@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>K Corner Pizza - Food In A Box</title>
+</head>
+<style>
+    /* custom.css */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.ui-page {
+    background: #f9f9f9;
+}
+
+.ui-header, .ui-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.ui-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ui-btn {
+  
+    background: #ff6600;
+    color: #fff;
+}
+
+.ui-btn:hover {
+    background: #ff8533;
+}
+
+.ui-content {
+    padding: 20px;
+}
+
+/* #order{
+    display: flex;
+    align-items: center;
+} */
+
+</style>
+<body>
+    <div data-role="page" id="kcornerpizza">
+        <div data-role="header" data-position="fixed">
+            <a href="#menu" data-icon="back">Back</a>
+            <h1>K Corner Pizza</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>K Corner Pizza</h2>
+            <img src="pizzaKr.jpg" alt="K Corner Pizza" style="width:100%; border-radius: 8px;">
+            <a href="#order" id="order" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Order Now</a>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2024 Food In A Box</h4>
+        </div>
+    </div>
+</body>
+</html>

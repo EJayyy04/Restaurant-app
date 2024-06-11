@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Food In A Box</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.ui-page {
+    background: #f9f9f9;
+}
+
+.ui-header, .ui-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.ui-btn {
+    background: #ff6600;
+    color: #fff;
+}
+
+.ui-btn:hover {
+    background: #ff8533;
+}
+
+.ui-content {
+    padding: 20px;
+}
+
+.ui-navbar ul {
+    text-align: center;
+}
+
+.ui-navbar a {
+    color: #fff;
+}
+
+</style>
+<body>
+    <div data-theme="e" data-role="page" id="home">
+        <div data-role="header" data-position="fixed">
+            <h1>Jollibee</h1>
+            <a href="#" data-icon="home" data-iconpos="notext" class="ui-btn-right">Home</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>Welcome to Jollibee!</h2>
+            <p>
+                Business Hours Dine-in, Take-out and Drive-Thru 6:00am to 10:00 pm Delivery 6:00am to 9:30pm</p>
+            <a href="#menu" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">View Menu</a>
+            <a href="#order" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Place Order</a>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2024 Jollibe Castillo Village</h4>
+            <div data-role="navbar">
+                <ul>
+                    <!-- <li><a href="#home" class="ui-btn-active">Home</a></li> -->
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="menu">
+        <div data-role="header" data-position="fixed">
+            <a href="#home" data-icon="back">Back</a>
+            <h1>Menu</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <h2>Our Menu</h2>
+            <ul data-role="listview">
+                <li><a href="JollibeeChicken.html">Chicken</a></li>
+                <li><a href="JollibeeBeverages.html">Beverages</a></li>
+                <li><a href="SuperSizeJollibee.html">Super Meals</a></li>    
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2024  Jollibe Castillo Village </h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="order">
+        <div data-role="header" data-position="fixed">
+            <a href="#home" data-icon="back">Back</a>
+            <h1>Order</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <h2>Place Your Order</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address">
+                <label for="food">Food Item:</label>
+                <select name="food" id="food">
+                    <option value="item1">Chicken</option>
+                    <option value="item2">Beverages</option>
+                    <option value="item3">Super Meals</option>
+                </select>
+                <input type="submit" value="Order" class="ui-btn ui-corner-all ui-shadow">
+            </form>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2024  Jollibe Castillo Village</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="contact">
+        <div data-role="header" data-position="fixed">
+            <a href="#home" data-icon="back">Back</a>
+            <h1>Contact Us</h1>
+        </div>
+        <div data-theme="b" role="main" class="ui-content">
+            <h2>Contact Information</h2>
+            <p>Email: info@gmailJollibee.com</p>
+            <p>Phone: 091 9945 692</p>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2024 Kr Corner</h4>
+        </div>
+    </div>
+</body>
+</html>

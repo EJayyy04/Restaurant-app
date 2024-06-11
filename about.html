@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="bstrap.css">
+
+  <style>
+   
+   body {
+      padding-top: 60px; 
+    }
+
+    .jumbotron {
+      background-color: #f8f9fa;
+      padding: 30px; 
+    }
+
+    .btn {
+      height: 70px;
+      width: 150px;
+      font-size: larger;
+    }
+
+    .restaurant {
+      display: flex;
+      text-align: center;
+      color: #f8f9fa;
+      font-size: larger;
+    }
+
+    .about{
+      font-weight: bold;
+    }
+
+    .lead {
+      text-align: center; 
+      padding: 10px; 
+    }
+  </style>
+</head>
+
+<body>
+
+<form action="index.html">
+    <header>
+        <div class="restaurant text-lg-center">
+          <nav class="navbar navbar-expand-lg navbar-primary bg-primary fixed-top text-lg-center">
+            <p class="navbar-brand"></p>
+          </nav>
+        </div> 
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="jumbotron">
+          <h1 class="about text-center display-5">About Us</h1>
+          <p class="lead">We students of ASCB, We are constantly exploring new technologies and honing our programming skills. We enjoy tackling challenging problems and collaborating with others to create innovative solutions. Our goal is to become proficient developers who can contribute to meaningful projects and make a positive impact on the world through technology. We are passionate about learning and growing in the field of software development, and We are excited about the opportunities that lie ahead in our careers.</p>
+          <hr class="my-lg-4">
+          <p class="text-lg-center"></p>
+        </div>
+      </div>
+    </main>
+
+    
+    <footer>
+      <div class="text-center">
+        <button class="btn btn-primary">Try our best option</button><br>
+      </div><br>
+      <p id="footer-text" class="text-center"></p><br>
+    </footer>
+</form>
+
+
+<script>
+   const footerText = document.getElementById('footer-text');
+   const currentYear = new Date().getFullYear();
+  footerText.innerHTML = `&copy; ${currentYear} All rights reserved.`;
+</script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  #restau .ui-header {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  #restau .ui-header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  #restau_infos, #contact_infos, #notation {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  #restau_infos .ui-block-a, #contact_infos .ui-block-a {
+    padding-right: 10px;
+  }
+  #restau_infos .ui-block-b, #contact_infos .ui-block-b {
+    text-align: center;
+  }
+  #restau_infos .ui-block-b img, #contact_infos .ui-block-b img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  #restau_infos .ui-block-b a, #contact_buttons a {
+    margin-top: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  #contact_buttons a {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff6347;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li {
+    background: #ff6347;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  footer {
+    margin-top: 20px;
+  }
+  footer p {
+    font-size: 14px;
+    color: #666;
+  }
